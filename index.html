@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thibaud's Server</title>
-    <link href="style.css" rel="stylesheet" />
+    <title>Lancer le Serveur Minecraft</title>
+    <script>
+        function startServer() {
+            fetch('http://192.168.1.165:5000/start-server-Survie-Principal-B-J')
+            .then(response => response.text())
+            .then(data => {
+                alert(data); // Afficher la réponse du serveur Flask
+            })
+            .catch(error => {
+                console.error('Erreur :', error);
+                alert('Une erreur est survenue lors du démarrage du serveur.');
+            });
+        }
+    </script>
 </head>
 <body>
-    <h1 style="text-align: center"><u>Thibaud's Server</u></h1>
-    <button onclick="fetch('http://192.168.1.165:5000/start-server-Survie-Principal-B-J')">Démarrer le serveur "Survie Principal B-J"</button>
+    <h1>Bienvenue sur le site de lancement du serveur Minecraft</h1>
+    <button onclick="startServer()">Démarrer le Serveur</button>
 </body>
 </html>
