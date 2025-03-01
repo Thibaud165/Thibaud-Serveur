@@ -4,22 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lancer le Serveur Minecraft</title>
-    <script>
-        function startServer() {
-            fetch('https://8e49-2a02-8429-9e22-b301-182b-5c62-4e96-b2d8.ngrok-free.app/start-server-Survie-Principal-B-J')
-            .then(response => response.text())
-            .then(data => {
-                alert(data); // Afficher la réponse du serveur Flask
-            })
-            .catch(error => {
-                console.error('Erreur :', error);
-                alert('Une erreur est survenue lors du démarrage du serveur.');
-            });
-        }
-    </script>
+    <link href="style.css" rel="stylesheet" />
 </head>
 <body>
     <h1>Bienvenue sur le site de lancement du serveur Minecraft</h1>
-    <button onclick="startServer()">Démarrer le Serveur</button>
+    <a href="https://8e49-2a02-8429-9e22-b301-182b-5c62-4e96-b2d8.ngrok-free.app/start-server-Survie-Principal-B-J" target="_blank">
+        <button>Démarrer le Serveur</button>
+    </a>
 </body>
 </html>
