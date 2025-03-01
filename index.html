@@ -6,7 +6,7 @@
     <title>Lancer le Serveur Minecraft</title>
     <script>
         function startServer() {
-            fetch('http://192.168.1.165:5000/start-server-Survie-Principal-B-J')
+            fetch('https://8e49-2a02-8429-9e22-b301-182b-5c62-4e96-b2d8.ngrok-free.app/start-server-Survie-Principal-B-J')
             .then(response => response.text())
             .then(data => {
                 alert(data); // Afficher la réponse du serveur Flask

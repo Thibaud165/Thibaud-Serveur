@@ -19,4 +19,4 @@ def start_server():
         return f"Erreur : {e}"
 
 if __name__ == '__main__':
-    app.run(host='192.168.1.165', port=5000)
+    app.run(host='0.0.0.0', port=5000)
